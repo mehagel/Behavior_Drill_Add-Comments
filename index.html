@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="application.js"></script>
+    <title></title>
+</head>
 <article>
   <h2>My post</h2>
   <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
@@ -12,7 +26,11 @@
       <span class="author">Tom Jones</span>
     </li>
   </ul>
-  
+  <form id="Form" action="comment.php" method="post"> 
+    Comment: <input type="text" name="comment" /> 
+    Name: <input type="text" name="name" /> 
+    <input type="submit" value="Submit Comment" /> 
+</form>
 
-  <button id="new_comment_button">New Comment</button>
+  <button id="new_comment_button">Create Comment</button>
 </div>
